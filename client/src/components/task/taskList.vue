@@ -43,7 +43,7 @@
 import {mapState, mapActions} from 'vuex'
 export default {
   data () {
-    return { }
+    return {            }
   },
   mounted () {
     this.fetchTaskList().catch(e => {})
