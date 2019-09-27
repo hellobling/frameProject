@@ -12,8 +12,9 @@ export default {
     left:0;
     bottom:0;
     width:100%;
-    height:80px;
+    height:60px;
+    line-height:60px;
     color:#fff;
-    background:#999;
+    background:#06080a;
   }
 </style>

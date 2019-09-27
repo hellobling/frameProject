@@ -8,11 +8,11 @@
       width="180">
       <template slot-scope="scope">
         <i class="el-icon-time"></i>
-        <span class="detailBtn" @click="taskDetail(scope.row)">{{ scope.row.date }}</span>
+        <span style="margin-left: 10px">{{ scope.row.date }}</span>
       </template>
     </el-table-column>
     <el-table-column
-      label="姓名"
+      label="类型"
       width="180">
       <template slot-scope="scope">
         <el-popover trigger="hover" placement="top">
@@ -59,14 +59,6 @@ export default {
     ...mapActions([
       'fetchTaskList'
     ]),
-    taskDetail (row) {
-      this.$router.push({
-        name: 'task-detail',
-        query: {
-          taskId: row.id
-        }
-      })
-    },
     handleEdit (index, row) {
       console.log(index, row)
     },
@@ -78,13 +70,6 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="stylus" scoped>
-  .taskList {
-    .detailBtn {
-      cursor:pointer;
-      &:hover {
-        color:#00d95e;
-      }
-    }
-  }
+<style scoped>
+
 </style>

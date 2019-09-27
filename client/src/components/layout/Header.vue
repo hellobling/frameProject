@@ -1,14 +1,18 @@
 <template>
-  <div class="nav">我是头部</div>
+  <div class="nav">
+    <v-MenuTab></v-MenuTab>
+  </div>
 </template>
 <script>
+import vMenuTab from './MenuTab.vue'
 export default {
+  components: {
+    vMenuTab
+  }
 }
 </script>
 <style scoped>
   .nav {
-    height:80px;
-    color:#fff;
-    background:#999;
+
   }
 </style>
