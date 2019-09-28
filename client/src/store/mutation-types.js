@@ -1,1 +1,1 @@
-export const SET_TASK_LIST = 'SET_TASK_LIST' // 任务列表
+export const SET_USER_LIST = 'SET_USER_LIST' // user 列表

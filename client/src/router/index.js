@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/layout/Home'
-import taskList from '@/components/task/taskList'
+import userList from '@/components/user/userList'
 import homePage from '@/components/layout/homePage'
 import dataSourceList from '@/components/dataSource/dataSourceList'
 // import HelloWorld2 from '@/components/HelloWorld2'
@@ -30,15 +30,15 @@ export default new Router({
       ]
     },
     {
-      path: '/task',
-      name: 'task',
+      path: '/user',
+      name: 'user',
       component: Home,
       redirect: 'noredirect',
       children: [
         {
           path: 'list',
-          name: 'task-list',
-          component: taskList,
+          name: 'user-list',
+          component: userList,
           meta: {
             keepAlive: false // 此组件不需要被缓存
           }
@@ -46,7 +46,7 @@ export default new Router({
         {
           path: 'detail',
           name: 'task-detail',
-          component: () => import(/* webpackChunckName: "task-dettail" */ '@/components/task/taskDetail.vue'),
+          component: () => import(/* webpackChunckName: "task-dettail" */ '@/components/user/taskDetail.vue'),
           meta: {
             keepAlive: false // 此组件不需要被缓存
           }

@@ -1,11 +1,11 @@
 import * as types from '../mutation-types'
 
 const state = {
-  list: []
+  userList: []
 }
 const mutations = {
-  [types.SET_TASK_LIST] (state, data) {
-    state.list = data
+  [types.SET_USER_LIST] (state, data) {
+    state.userList = data
   }
 }
 

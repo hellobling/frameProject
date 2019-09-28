@@ -1,7 +1,7 @@
 <template>
-  <div class="taskList">
+  <div class="userList">
     <el-table
-    :data="taskList"
+    :data="userList"
     style="width: 100%">
     <el-table-column
       label="日期"
@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import {mapState, mapActions} from 'vuex'
+import { mapState, mapActions } from 'vuex'
 export default {
   data () {
     return {
@@ -48,16 +48,16 @@ export default {
     }
   },
   mounted () {
-    this.fetchTaskList().catch(e => {})
+    this.fetchUserList().catch(e => {})
   },
   computed: {
     ...mapState({
-      taskList: state => state.task.list || []
+      userList: state => state.user.userList || []
     })
   },
   methods: {
     ...mapActions([
-      'fetchTaskList'
+      'fetchUserList'
     ]),
     taskDetail (row) {
       this.$router.push({
@@ -79,7 +79,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="stylus" scoped>
-  .taskList {
+  .userList {
     .detailBtn {
       cursor:pointer;
       &:hover {

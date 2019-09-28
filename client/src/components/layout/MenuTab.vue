@@ -7,8 +7,8 @@
       <el-button @click="gotoPage('dataSource-list')" :class="{'isActiveBtn':isActiveBtn('dataSource-list')}">
         <span>数据源列表</span>
       </el-button>
-      <el-button @click="gotoPage('task-list')" :class="{'isActiveBtn':isActiveBtn('task-list')}">
-        <span>任务列表</span>
+      <el-button @click="gotoPage('user-list')" :class="{'isActiveBtn':isActiveBtn('user-list')}">
+        <span>user列表</span>
       </el-button>
     </el-button-group>
   </div>

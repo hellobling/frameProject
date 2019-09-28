@@ -10,6 +10,7 @@ app.all('*', function (req, res, next) {
   res.header('Access-Control-Allow-Origin', '*') //设置跨域 允许任何客户端访问
   next()
 })
+console.log('##')
 app
   .use(bodyParser.json({limit:'50mb'})) // 设置请求体最大大小为5M
   .use('/', router) // 注册业务逻辑处理模块

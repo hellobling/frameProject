@@ -48,7 +48,7 @@ export default {
     }
   },
   mounted () {
-    this.fetchTaskList().catch(e => {})
+    this.fetchUserList().catch(e => {})
   },
   computed: {
     ...mapState({
@@ -57,7 +57,7 @@ export default {
   },
   methods: {
     ...mapActions([
-      'fetchTaskList'
+      'fetchUserList'
     ]),
     handleEdit (index, row) {
       console.log(index, row)
