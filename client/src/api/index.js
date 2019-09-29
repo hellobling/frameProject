@@ -5,3 +5,8 @@ export function fetchUserList () {
     return res.data
   })
 }
+export function fetchAnimalList () {
+  return axios.get('/liang/animal/list').then(res => {
+    return res.data
+  })
+}

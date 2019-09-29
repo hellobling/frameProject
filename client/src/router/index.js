@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/layout/Home'
 import userList from '@/components/user/userList'
 import homePage from '@/components/layout/homePage'
-import dataSourceList from '@/components/dataSource/dataSourceList'
+import animalList from '@/components/animal/animalList'
 // import HelloWorld2 from '@/components/HelloWorld2'
 
 Vue.use(Router)
@@ -46,7 +46,7 @@ export default new Router({
         {
           path: 'detail',
           name: 'task-detail',
-          component: () => import(/* webpackChunckName: "task-dettail" */ '@/components/user/taskDetail.vue'),
+          component: () => import(/* webpackChunckName: "task-dettail" */ '@/components/user/userDetail.vue'),
           meta: {
             keepAlive: false // 此组件不需要被缓存
           }
@@ -54,15 +54,15 @@ export default new Router({
       ]
     },
     {
-      path: '/dataSource',
-      name: 'dataSource',
+      path: '/animal',
+      name: 'animal',
       component: Home,
       redirect: 'noredirect',
       children: [
         {
           path: 'list',
-          name: 'dataSource-list',
-          component: dataSourceList
+          name: 'animal-list',
+          component: animalList
         }
       ]
     }

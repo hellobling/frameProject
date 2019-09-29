@@ -1,5 +1,5 @@
 <template>
-  <div class="taskDetail">
+  <div class="userDetail">
     <div class="backTo">
         <el-button v-on:click="back" class="back">返回</el-button>
     </div>
@@ -16,7 +16,7 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-  .taskDetail {
+  .userDetail {
     .backTo {
       text-align:left;
       .back {

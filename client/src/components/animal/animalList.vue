@@ -1,7 +1,7 @@
 <template>
-  <div class="taskList">
+  <div class="animalkList">
     <el-table
-    :data="taskList"
+    :data="animalList"
     style="width: 100%">
     <el-table-column
       label="日期"
@@ -48,16 +48,16 @@ export default {
     }
   },
   mounted () {
-    this.fetchUserList().catch(e => {})
+    this.fetchAnimalList().catch(e => {})
   },
   computed: {
     ...mapState({
-      taskList: state => state.task.list || []
+      animalList: state => state.animal.animalList || []
     })
   },
   methods: {
     ...mapActions([
-      'fetchUserList'
+      'fetchAnimalList'
     ]),
     handleEdit (index, row) {
       console.log(index, row)

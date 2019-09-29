@@ -4,8 +4,8 @@
       <el-button @click="gotoPage('homePage')" :class="{'isActiveBtn':isActiveBtn('homePage')}">
         <span>首页</span>
       </el-button>
-      <el-button @click="gotoPage('dataSource-list')" :class="{'isActiveBtn':isActiveBtn('dataSource-list')}">
-        <span>数据源列表</span>
+      <el-button @click="gotoPage('animal-list')" :class="{'isActiveBtn':isActiveBtn('animal-list')}">
+        <span>animal列表</span>
       </el-button>
       <el-button @click="gotoPage('user-list')" :class="{'isActiveBtn':isActiveBtn('user-list')}">
         <span>user列表</span>

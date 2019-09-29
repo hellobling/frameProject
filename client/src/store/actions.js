@@ -8,3 +8,10 @@ export const fetchUserList = function ({commit}) {
     return list
   })
 }
+export const fetchAnimalList = function ({commit}) {
+  return api.fetchAnimalList().then(result => {
+    let list = (result.data && result.data.content) || []
+    commit(types.SET_ANIMAL_LIST, list)
+    return list
+  })
+}

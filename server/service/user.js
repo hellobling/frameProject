@@ -19,26 +19,7 @@ let listData = {
   msg: ''
 }
 
-let list2Data = {
-  data: {
-    content: [
-      {
-        date: 1569421727000,
-        name: 'dog',
-        id: 1001,
-        address: 'hongkang'
-      },
-      {
-        'date': 1569421727000,
-        name: 'dd',
-        id: 1002,
-        address: 'beijing'
-      }
-    ]
-  },
-  code: 0,
-  msg: ''
-}
+
 
 exports.getUserList = function (id) {
   id = id || '';
