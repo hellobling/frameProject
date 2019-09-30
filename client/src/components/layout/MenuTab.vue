@@ -10,6 +10,9 @@
       <el-button @click="gotoPage('user-list')" :class="{'isActiveBtn':isActiveBtn('user-list')}">
         <span>user列表</span>
       </el-button>
+      <el-button>
+        <span>music列表</span>
+      </el-button>
     </el-button-group>
   </div>
 </template>
